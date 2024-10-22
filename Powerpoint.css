@@ -1,0 +1,64 @@
+/* PowerPoint Slides specific styles */
+#powerpoint-slides {
+    padding-top: 80px; /* Adjust based on your header height */
+}
+
+.project {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-info {
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.project-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.project-preview {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#powerpoint-slides .cta-button {
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .project {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .project-info {
+        flex: 1;
+        padding-right: 2rem;
+    }
+
+    .project-preview {
+        flex: 2;
+    }
+}

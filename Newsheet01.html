@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jesin V V</title>
+    <link rel="stylesheet" href="Newsheet.css">
+    <script src="Newsheet.js" defer></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jesin</div>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Jesin V V</h1>
+            <p>Data Analyst & Power BI Developer</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </section>
+
+        <section id="projects" class="portfolio-container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Showcasing my work with Power BI dashboards</p>
+
+            <div class="project">
+                <div class="project-info">
+                    <h3>US Stocks Dashboard</h3>
+                    <p>A comprehensive view of US stock performance, trends, and insights. Designed to help investors and analysts make informed decisions.</p>
+                </div>
+                <div class="project-preview">
+                    <iframe title="US Stocks Dashboard" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiYjA0MWQzN2ItZWRjNS00YzAyLWJkZjctMDRmMDIwN2U2NmFmIiwidCI6ImQ5NDIzMjA2LTY3MDctNDYyOS05NzQ3LWJkZjkxMDIyMjViNiJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-info">
+                    <h3>Maven Tech Sales Dashboard</h3>
+                    <p>Insights into sales performance, enabling businesses to make data-driven decisions and optimize their sales strategies.</p>
+                </div>
+                <div class="project-preview">
+                    <iframe title="Maven Tech Sales Dashboard" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiMmNkMjJiMTQtYThiOC00M2QzLTlhNTMtYzJjOTBlMmIzODliIiwidCI6ImQ5NDIzMjA2LTY3MDctNDYyOS05NzQ3LWJkZjkxMDIyMjViNiJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-envelope"></i> vvjesinvazhayil@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9633830072</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kochi, India</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jesin V V. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
