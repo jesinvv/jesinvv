@@ -685,4 +685,25 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .button-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button {
+    margin: 0.5rem;
+  }
+}
+
+/* For smaller mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    margin: 0.5rem 0;
+  }
+}
 /* ... (rest of the CSS remains the same) ... */
